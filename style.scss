@@ -1,0 +1,48 @@
+/* Variabler*/
+$bgColor: lightblue;
+$textColor: #333333;
+$linkColor: purple;
+$breakpoint-tablet: 375px;
+
+/* class stylex*/
+.centered_text {
+  text-align: center;
+}
+
+/* Main styles*/
+body {
+  background-color: $bgColor;
+  color: $textColor;
+}
+
+/* Nesting */
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: $linkColor;
+  }
+}
+
+
+
+/* iPhone (landscape) */
+@media  (max-width: $breakpoint-tablet) {
+  body {
+    background-color: lightpink;
+    color: black;
+    .col-sm-4 {
+      color: white;
+    }
+
+  }
+}
